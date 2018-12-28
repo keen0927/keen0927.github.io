@@ -5,16 +5,16 @@
 #
 title: Leonids
 email:
-description: A simple and awesome blog theme powered by jekyll.
+description: Front-end Developer Keen's Blog.
 url: # the base hostname & protocol for your site
-keywords: ["blog", "jekyll"]
+keywords: ["Front-end", "Web-Developer", "UI Developer"]
 
 #
 ###################################
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          Asia/Seoul
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -33,10 +33,10 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
-  avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
+  name: Keen
+  avatar: keen-logo__none.png
+  job: "Front-end Developer"
+  bio: "Talk is cheap. Show me the code."
   email:
   disqus-shortname:
   twitter: #username

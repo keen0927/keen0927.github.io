@@ -2,7 +2,7 @@
 .post-listing {
   background-color: $white;
   position: absolute;
-  top: 400px;
+  top: 220px;
   z-index: 233;
   width: 100%;
   padding: 20px 20px 0;
@@ -23,7 +23,7 @@
   float: right;
   font-weight: bold;
   font-style: italic;
-  color: $info;
+  color: $warning;
   font-size: 13px;
   padding-right: 20px;
 }
@@ -63,6 +63,7 @@ section.post {
 .post-meta {
   font-size: 13px;
   font-weight: bold;
+  color: rgba(0,0,0,0.5);
 	.post-date {
 		color: $secondary;
 	}
@@ -75,7 +76,7 @@ section.post {
 		color: $warning;
 	}
   .read-time {
-    color: $primary;
+    color: $warning;
   }
 }
 
