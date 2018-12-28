@@ -78,7 +78,7 @@
     color: rgba(0, 0, 0, 0.6);
     zoom: 1;
     &:after {
-      content: '/';
+      content: '-';
     }
     &:last-child:after {
       content: '';
