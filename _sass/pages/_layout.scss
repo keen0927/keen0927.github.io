@@ -8,7 +8,6 @@
   padding: 0 15px 20px;
   z-index: 1;
   @include media-query($small-screen) {
-    min-width: 320px;
     background-position: center;
   }
   @include media-query($medium-screen) {

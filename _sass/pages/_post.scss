@@ -9,7 +9,6 @@
   -webkit-transform: translate3d(0,0,1px);
   transform: translate3d(0,0,1px);
   @include media-query($small-screen) {
-    min-width: 320px;
     padding: 50px 30px 0;
   }
   @include media-query($medium-screen) {
