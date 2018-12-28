@@ -6,7 +6,7 @@
   width: 100%;
   min-width: 320px;
   min-height: 220px;
-  padding: 0 15px 20px;
+  padding: 0 30px;
   z-index: 1;
   @include media-query($small-screen) {
     min-width: 10px;
