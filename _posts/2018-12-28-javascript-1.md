@@ -71,6 +71,25 @@ console.log(testObject.value); // 3
 
 메소드는 자신을 포함하고있는 객체의 속성에 접근하기 위해 **this**를 사용할 수 있다. 객체의 값을 this를 사용해서 일거나 변경할 수 있다. 
 
+예외적으로 메소드 호출에서의 this가 함수 안에서 선언되었을때 this는 **window**가 된다.
+
+<br> 이를 방지하려면 변수값에 this를 담아서 불러오면 자신을 포함하고 있는 객체가 this가 된다.
+
+{% highlight javascript %}
+var testObject = {
+  testArray: ['가','나','다'],
+  print: function() {
+      var _this = this.testArray;
+      setTimeout(function(){
+          console.log(_this); 
+      },1000);
+  }
+};
+testObject.print(); // testObject
+{% endhighlight %}
+
+추가적으로 위의 print메소드를 화살표 함수로 변경하면 this는 window객체가 된다. 이를 해결하려면 화살표 함수가 아닌 function을 사용해서 함수를 사용해야 한다.
+
 > this와 객체의 바인딩은 호출 시 일어난다.
 
 이렇게 늦은 바인딩은 this를 효율적으로 사용하는 함수를 만드는게 가능하고 자신의 객체 문맥을 this로 얻는 메소드를 **퍼블릭메소드**라고 부른다.
