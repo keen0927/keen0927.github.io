@@ -6,7 +6,7 @@ categories: [algorithm]
 comments: true
 ---
 
-## K번째수
+## K번째수 (level 1)
 
 배열 array의 i번째 숫자부터 j번째 숫자까지 자르고 정렬했을 때, k번째에 있는 수를 구하려 합니다.
 
@@ -22,4 +22,24 @@ function solution(array, commands) {
 var result = solution([1, 5, 2, 6, 3, 7, 4],[[2, 5, 3], [4, 4, 1], [1, 7, 3]]);
 
 console.log(result); // [5,6,3]
+{% endhighlight %}
+
+## 완주하지 못한 선수 (level 1)
+
+마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하자.
+
+{% highlight javascript %}
+function solution(participant, completion) {
+    var p = participant.sort(),
+        c = completion.sort();
+    
+    for (var i = 0; i < p.length ; i++) {
+    if (p[i] !== c[i]) {
+        return p[i];
+    }
+    }
+}
+
+var result = solution(['leo', 'kiki', 'eden'], ['eden', 'kiki'] );
+console.log(result); // leo
 {% endhighlight %}
