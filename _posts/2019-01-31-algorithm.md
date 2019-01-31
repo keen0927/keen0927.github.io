@@ -34,9 +34,9 @@ function solution(participant, completion) {
         c = completion.sort();
     
     for (var i = 0; i < p.length ; i++) {
-    if (p[i] !== c[i]) {
-        return p[i];
-    }
+        if (p[i] !== c[i]) {
+            return p[i];
+        }
     }
 }
 
