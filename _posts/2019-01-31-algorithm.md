@@ -1,10 +1,22 @@
 ---
 layout: post
 title: 알고리즘
-excerpt: "하루에 한개 알고리즘 문제를 풀어보자."
+excerpt: "알고리즘 문제를 풀어보자!"
 categories: [algorithm]
 comments: true
 ---
+
+## 2019년 a월 b일은 무슨 요일일까요? (level 1)
+두 수 a,b를 입력받아 2019년 a월 b일은 무슨 요일인지 맞추시오.
+
+{% highlight javascript %}
+function solution(a, b) {
+    var date = new Date(2019, a-1, b);
+    return date.toString().slice(0,3).toUpperCase();
+}
+
+console.log(solution(2,2));
+{% endhighlight %}
 
 ## K번째수 (level 1)
 
