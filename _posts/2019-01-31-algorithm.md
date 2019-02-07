@@ -6,6 +6,17 @@ categories: [algorithm]
 comments: true
 ---
 
+## 같은 숫자 제거 (level 1)
+배열 arr가 주어집니다. 배열 arr의 각 원소는 숫자 0부터 9까지로 이루어져 있다. 이때, 배열 arr에서 연속적으로 나타나는 숫자는 하나만 남기고 전부 제거하려한다. 배열 arr에서 제거 되고 남은 수들을 return 하는 solution 함수를 완성하라. 단, 제거된 후 남은 수들을 반환할 때는 배열 arr의 원소들의 순서를 유지해야 함.
+
+arr = [2,2,4,4,0,1,1,] 이면 [2,4,0,1]을 return 한다.
+
+{% highlight javascript %}
+function solution(arr) {
+    return arr.filter((val,index) => val != arr[index+1]);
+}
+{% endhighlight %}
+
 ## 2019년 a월 b일은 무슨 요일일까요? (level 1)
 두 수 a,b를 입력받아 2019년 a월 b일은 무슨 요일인지 맞추시오.
 
