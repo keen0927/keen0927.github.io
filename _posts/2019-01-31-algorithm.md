@@ -6,6 +6,30 @@ categories: [algorithm]
 comments: true
 ---
 
+
+## 김서방 찾기 (level 1)
+string형 배열 singer의 element중 twice의 위치 x를 찾아, 트와이스는 x에 있다는 string을 반환하는 함수, solution을 완성하세요. singer에 twice는 오직 한 번만 나타나며 잘못된 값이 입력되는 경우는 없습니다.
+
+{% highlight javascript %}
+var singer = ["blackpink","twice","apink"];
+    
+function solution(singer) {
+
+    var idx = singer.indexOf('twice');
+    var answer = '트와이스는 ' + idx + '에 있다';
+
+    // var answer = '';
+
+    // for (let i = 0; i < singer.length ; i++) {
+    //   if (singer[i] == 'twice') {
+    //     answer = '트와이스는 ' + i + '에 있다';
+    //   }
+    // }
+
+    return answer;
+}
+{% endhighlight %}
+
 ## 같은 숫자 제거 (level 1)
 배열 arr가 주어집니다. 배열 arr의 각 원소는 숫자 0부터 9까지로 이루어져 있다. 이때, 배열 arr에서 연속적으로 나타나는 숫자는 하나만 남기고 전부 제거하려한다. 배열 arr에서 제거 되고 남은 수들을 return 하는 solution 함수를 완성하라. 단, 제거된 후 남은 수들을 반환할 때는 배열 arr의 원소들의 순서를 유지해야 함.
 
