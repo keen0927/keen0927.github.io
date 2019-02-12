@@ -17,14 +17,26 @@ function solution(phone_number) {
     return phone_number.replace(/\d(?=\d{4})/g, "*");
 }
 
-// 기본형
+// 기본형 (repeat API는 안드로이드 웹뷰, IE 미지원..ㅠ)
 function solution2(phone){
     var result = "*".repeat(phone.length - 4) + phone.slice(-4);
     return result;
 }  
 
+// 기본형 추가
+function solution3(phone) {
+    var answer = '';
+
+    for (i = 0 ; i < phone.length ; i++) {
+        answer += i < phone.length - 4 ? '*' : phone.charAt(i);
+    }
+
+    return answer;
+}
+
 console.log(solution(phone));
 console.log(solution2(phone));
+console.log(solution3(phone));
 {% endhighlight%}
 
 ## 김서방 찾기 (level 1)
