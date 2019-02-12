@@ -6,6 +6,26 @@ categories: [algorithm]
 comments: true
 ---
 
+## 핸드폰 번호 가리기 (level 1)
+주어지는 핸드폰넘버의 뒷자리 4자리를 제외한 나머지 영역을 * 처리 하라.
+
+{% highlight javascript %}
+var phone = "01022223333";
+
+// 정규식
+function solution(phone_number) {
+    return phone_number.replace(/\d(?=\d{4})/g, "*");
+}
+
+// 기본형
+function solution2(phone){
+    var result = "*".repeat(phone.length - 4) + phone.slice(-4);
+    return result;
+}  
+
+console.log(solution(phone));
+console.log(solution2(phone));
+{% endhighlight%}
 
 ## 김서방 찾기 (level 1)
 string형 배열 singer의 element중 twice의 위치 x를 찾아, 트와이스는 x에 있다는 string을 반환하는 함수, solution을 완성하세요. singer에 twice는 오직 한 번만 나타나며 잘못된 값이 입력되는 경우는 없습니다.
