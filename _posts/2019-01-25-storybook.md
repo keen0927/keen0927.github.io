@@ -2,7 +2,7 @@
 layout: post
 title: storybook.js
 excerpt: "리액트에 storybook.js을 적용하여 개발하는 방법에 대한 설명"
-categories: [react, storybook]
+categories: [react]
 comments: true
 ---
 

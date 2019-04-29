@@ -2,7 +2,7 @@
 layout: post
 title: React & Springboot VSCODE에서 환경셋팅
 excerpt: "Springboot 환경에서 React를 올려서 사용하는 초기 셋팅에 대한 설명."
-categories: [react, springboot]
+categories: [react, java]
 comments: true
 ---
 
