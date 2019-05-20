@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AWS Elastic beanstalk에 대하여
-excerpt: ""
+excerpt: "블루,그린 배포등 AWS에서 제공하는 어플리케이션 배포에 관한내용"
 categories: [AWS]
 comments: true
 ---
