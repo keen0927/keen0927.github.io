@@ -26,6 +26,20 @@ Springboot 환경에서 React를 올려서 사용하는 초기 셋팅에 대한 
 
 3. VSCODE의 설정창에서 **java.home**을 검색하여 사용자설정에 **java.home** 추가 및 자신의 자바 경로로 변경한다.
 
+3-1. java home 위치는 다음 명령어로 찾는다.
+```js
+$ cd /Library/Java/JavaVirtualMachines/ 
+$ ls // 나오는 디렉토리로 이동후
+$ pwd // 나오는 루트 복사
+```
+
+3-2. setting.json에 추가하기
+```html
+"java.home" : "위의 경로를 붙여 넣기",
+"code-runner.runInTerminal": true,
+"java.errors.incompleteClasspath.severity": "ignore"
+```
+
 4. F1을 눌러 Spring Initalizr: Generate a Gradle Project 선택
 
 5. Group ID / Artifact ID 를 입력.
