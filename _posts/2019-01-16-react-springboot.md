@@ -29,7 +29,8 @@ Springboot 환경에서 React를 올려서 사용하는 초기 셋팅에 대한 
 3-1. java home 위치는 다음 명령어로 찾는다.
 ```js
 $ cd /Library/Java/JavaVirtualMachines/ 
-$ ls // 나오는 디렉토리로 이동후
+$ ls // 노출되는 자바 디렉토리중 사용할 디렉토리로 이동
+$ cd Contents/Home
 $ pwd // 나오는 루트 복사
 ```
 
@@ -39,6 +40,15 @@ $ pwd // 나오는 루트 복사
 "code-runner.runInTerminal": true,
 "java.errors.incompleteClasspath.severity": "ignore"
 ```
+
+3-ETC. bash_profils 이나 zshrc에 추가하려면 (zshrc로 설명)
+다음을 열어서 vi ~/.zshrc
+해당 코드를 추가 (자바 버전은 사용자에게 맞는 버전으로 변경)
+```html
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
+```
+터미널에서 java -version 입력.
+
 
 4. F1을 눌러 Spring Initalizr: Generate a Gradle Project 선택
 
