@@ -8,8 +8,7 @@ comments: true
 
 ## 노치디자인?
 아이폰X 부터 적용된 노치디자인(일명 탈모 디자인). 사진으로 알아보자.
-<p><img src="../img/notch.png" alt="아아 잡스형.." width="100px" /></p>
-그러하다..
+<p><img src="https://image.zdnet.co.kr/2018/04/18/lejj_GwiuSpNTv9Bg6N9.jpg" alt="" width="300px" /></p>
 
 ## 사례
 1. 고정 하단 플로팅 버튼이 있을때 홈 버튼과 겹쳐 UX가 불편해진다.
