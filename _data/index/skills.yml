@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: HTML/CSS, Javascript, UI/UX, Vue.js, Test, Test2
-percentage: 80, 65, 80, 50, 10, 50
+aspects: HTML&CSS, JS, UI/UX, React.js, Server, CI/CD
+percentage: 90, 75, 85, 80, 30, 30
